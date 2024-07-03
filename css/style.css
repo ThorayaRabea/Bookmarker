@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: #f7ecde;
+}
+.main h2{
+    font-family: "Pacifico", cursive;
+}
+.main h2::after{
+   content: '';
+   width: 100%;
+   height: 25%;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background-color: #fec260;
+   z-index: -1;
+   transition-property: all;
+   transition-duration: .3s;
+}
+.main h2:hover::after{
+   height: 60%;
+}
+
+.bookmarker .title h2{
+   background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-control:focus{
+    border-color: #d99c39 !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.butn{
+    background-color:#bb4120;
+    padding: 5px 50px;
+
+}
+
+.bookmarker{
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+}
+.table>:not(:first-child){
+    border-top: 0px;
+}
+.red{
+    width:25px;
+    height: 25px;
+    background-color: #f15f5d;
+    border-radius: 50%;
+}
+.yellow{
+    width:25px;
+    height: 25px;
+    background-color: #febe2e;
+    border-radius: 50%;
+}
+.green{
+    width:25px;
+    height: 25px;
+    background-color: #4db748;
+    border-radius: 50%;
+}
+
+#header{
+    height: 250px;
+    width: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+#AlertMessage{
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+}

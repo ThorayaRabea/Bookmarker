@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Bookmarker</title>
+      <link rel="shortcut icon" href="img/360_F_166499892_eoI77XvYsRnZjBjrryUhw4HONDSM6QQa.jpg">
+
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/all.min.css">
+    </head>
+    <body>
+
+
+      <section >
+        <div class="container">
+          <div class="main d-flex justify-content-center py-5">
+            <h2 class="position-relative">Bookmarker</h2>
+          </div>
+
+          <div class="bookmarker  pb-4 mb-4">
+           <div class="title d-flex justify-content-center">
+             <h2 class="fs-3 my-4"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+           </div>
+
+           <div class="inputs ">
+              <form action="">
+                <label for=""><i class="fa-solid fa-book-bookmark"></i> <span class="fw-bold">Site Name</span></label>
+                <input type="text" name="bookName" placeholder="Bookmark Name" class="form-control mt-2 mb-4" id="BookName">
+                <label for=""><i class="fa-solid fa-link"></i> <span class="fw-bold">Site URL</span></label>
+                <input type="text" name="bookName" placeholder="Website URL" class="form-control mt-2 mb-4" id="WebName">
+              </form>
+              <button class="btn  butn text-white d-block m-auto " id="bbtn">Submit</button>
+           </div>
+
+          </div>
+
+
+          <div class="">
+            <table class="table table-light text-center">
+              <thead>
+                <tr>
+                  <th >Index</th>
+                  <th >Website Name</th>
+                  <th >Visit</th>
+                  <th >Delete</th>
+                </tr>
+              </thead>
+              <tbody id="tabeBody">
+                
+              </tbody>
+            </table>
+          </div>
+    
+        </div>
+      </section>
+
+
+      <div class=" vh-100 d-none justify-content-center align-items-center position-fixed" id="AlertMessage">
+            <div class=" py-4 px-2" id="header">
+              <div class="container">
+                <div class="d-flex justify-content-between">
+                  <div class="circles d-flex ">
+                    <div class="red me-2"></div>
+                    <div class="yellow me-2"></div>
+                    <div class="green me-2"></div>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-xmark fs-4" id="exit"></i>
+                  </div>
+                </div>
+
+                <p class="my-4 fs-5 fw-bold">Site Name or Url is not valid, Please follow the rules below :</p>
+                <h5 class="fw-normal"><i class="fa-solid fa-circle-right text-danger"></i> Site name must contain at least 3 characters</h5>
+                <h5 class="fw-normal" ><i class="fa-solid fa-circle-right text-danger mt-2" ></i>Site URL must be a valid one</h5>
+
+
+              </div>
+            </div>
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
+     <script src="js/script.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
